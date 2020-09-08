@@ -79,7 +79,7 @@ gulp.task('protractor', function(done) {
       configFile: 'protractor.conf.js',
       args: [
         '--baseUrl', 'http://127.0.0.1:' + program.port,
-        '--browser', program.browsers ? program.browsers[0] : 'firefox'
+        '--browser', program.browsers ? program.browsers[0] : 'chrome'
       ]
     }))
     .on('end', function() {

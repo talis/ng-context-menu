@@ -1,9 +1,8 @@
 dist: xenial
-env:
-  global:
-    - MOZ_HEADLESS=1
 addons:
-  firefox: latest
+  chrome: stable
+services:
+  - xvfb
 language: node_js
 node_js:
   - 10

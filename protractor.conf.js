@@ -1,7 +1,10 @@
 var outputDir = 'test-result';
 var config = {
   capabilities: {
-    browserName: 'firefox'
+    browserName: 'chrome',
+    chromeOptions: {
+      w3c: false
+    }
   },
   onPrepare: function() {
     require('jasmine-reporters');
