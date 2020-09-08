@@ -107,7 +107,7 @@
             });
 
             function handleKeyUpEvent(event) {
-              if (!$scope.disabled() && opened && event.keyCode === 27) {
+              if (opened && event.keyCode === 27) {
                 $scope.$apply(function() {
                   close(ContextMenuService.menuElement);
                 });
@@ -115,8 +115,7 @@
             }
 
             function handleClickEvent(event) {
-              if (!$scope.disabled() &&
-                opened &&
+              if (opened &&
                 (event.button !== 2 ||
                   event.target !== ContextMenuService.element)) {
                 $scope.$apply(function() {
