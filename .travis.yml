@@ -1,8 +1,10 @@
+dist: xenial
+addons:
+  chrome: stable
+services:
+  - xvfb
 language: node_js
 node_js:
-  - stable
+  - 10
 before_script:
   - npm install -g gulp
-  - "export DISPLAY=:99.0"
-  - "sh -e /etc/init.d/xvfb start"
-  - sleep 3

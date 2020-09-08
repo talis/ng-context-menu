@@ -1,5 +1,12 @@
 # Changes to ng-context-menu
 
+## 1.1.0
+1. Added #6: Allow closing of context menu even when disabled. @pads
+
+## v1.0.3
+1. Added #1: Move to Travis CI for building. @pads
+2. Added #4: Fix positioning issue in IE. Thanks @ajwild!
+
 ## v1.0.1
 1. Added #30: Add callback for when the context menu is closed. Thanks @andrewburgess!
 2. Added #31: Use flat-github-ribbon.
